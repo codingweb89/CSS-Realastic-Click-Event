@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353935;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    background: #28282B;
+    padding:  50px;
+    border-radius: 10px;
+}
+
+.container button {
+    padding: 20px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #353935;
+    box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.5),
+                -4px -4px 10px 1px rgba(0,0,0,0.5),
+                -4px 5px 10px 1px rgba(0,0,0,0.5),
+                4px -5px 10px 1px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container button img {
+    width: 40px;
+}
+
+.container button:focus {
+    border-radius: 5px;
+    box-shadow: inset 4px 4px 5px 1px #fff,
+                inset -4px -4px 5px 1px #fff;
+}
+
+
+.container button:focus img {
+    filter: invert(100%) drop-shadow(0 0 10px #fff);
+}
+
+
+/* 
+
+#36454F
+#023
+#353935
+28282B
+
+
+
+
+*/
